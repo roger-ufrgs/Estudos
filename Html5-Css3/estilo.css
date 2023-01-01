@@ -1,0 +1,58 @@
+:root{
+
+    --cor-padrao:#8E2424;
+    --largura-padrao:1440px;
+    
+
+}
+
+
+body{
+    
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    grid-auto-columns:1fr;
+    margin: auto;
+    width: var(--largura-padrao)
+}
+header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 32px;
+
+}
+header nav #logo{
+
+    flex:2;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+    flex:2;
+}
+header nav ul li {
+    margin: 0 1.5%;
+}
+header nav #botoes {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex:2;
+}
+header nav #botoes button{
+    background-color: var(--cor-padrao);
+    color:white;
+    border:transparent;
+    padding: 3% 10%;
+    margin-left: 3%;
+    border-radius: 10px;
+}
+header nav #botoes span{
+
+}
