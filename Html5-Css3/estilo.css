@@ -1,18 +1,14 @@
 :root{
-
     --cor-padrao:#8E2424;
-    --largura-padrao:1440px;
-    
-
+    --cor-secundaria:LightGrey;
+    --largura-padrao:1440px;        
 }
 
-
 body{
-    
     display: grid;
-    grid-template-columns: 2fr 4fr 2fr;
+    grid-template-columns: 1fr 5fr 2fr;
     grid-auto-columns:1fr;
-    margin: auto;
+    margin:1% auto;
     width: var(--largura-padrao)
 }
 header{
@@ -24,20 +20,20 @@ header nav{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 32px;
+    padding: 0px 2%;
 
 }
 header nav #logo{
-
     flex:2;
 }
 header nav ul {
     display: flex;
+    justify-content:flex-start;
     list-style: none;
-    flex:2;
+    flex:4;
 }
 header nav ul li {
-    margin: 0 1.5%;
+    margin: 0 2%;
 }
 header nav #botoes {
     display: flex;
@@ -49,10 +45,16 @@ header nav #botoes button{
     background-color: var(--cor-padrao);
     color:white;
     border:transparent;
-    padding: 3% 10%;
+    padding: 3% 4%;
     margin-left: 3%;
     border-radius: 10px;
+    transition: all 1s;
+}
+header nav #botoes button:hover{
+    background-color: var(--cor-secundaria);
+    color:black;
+    cursor: pointer;
 }
 header nav #botoes span{
-
+    margin-right: 3%;
 }
