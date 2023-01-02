@@ -21,7 +21,7 @@ header nav{
     justify-content: space-between;
     align-items: center;
 }
-header nav #logo{
+#logo{
     flex:2;
 }
 header nav ul {
@@ -48,9 +48,8 @@ header nav #botoes button{
     border-radius: 10px;
     transition: all 1s;
 }
-header nav #botoes button:hover{
+#botoes button:hover{
     background-color: var(--cor-secundaria);
-    color:black;
     cursor: pointer;
 }
 header nav #botoes span{
@@ -98,4 +97,40 @@ header nav #botoes span{
 .box-metricas p{
     color: var(--cor-secundaria);
     font-size: 0.9em;
+}
+#vagas {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+#vagas div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    align-items: center;
+}
+#vagas span{
+    color: var(--cor-padrao);
+    background-color:#f3f3f3;
+    padding: 1%;
+    border-radius: 20px;
+    transition: all 1s;
+}
+#vagas span:hover{
+    background-color: var(--cor-padrao);
+    color:#f3f3f3;
+    cursor: pointer;
+}
+
+#vagas h2{
+    font-size: 2em;
+}
+#vagas p {
+    color: var(--cor-secundaria);
+    font-size: 1.2em;
+    width: 60%;
+    text-align: center;
+}
+#vagas img{
+    margin-top: 5%;
+    width: 100%;
 }
