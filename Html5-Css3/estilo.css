@@ -1,6 +1,6 @@
 :root{
     --cor-padrao:#8E2424;
-    --cor-secundaria:LightGrey;
+    --cor-secundaria:#667085;
     --largura-padrao:1440px;        
 }
 
@@ -20,8 +20,6 @@ header nav{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 2%;
-
 }
 header nav #logo{
     flex:2;
@@ -57,4 +55,47 @@ header nav #botoes button:hover{
 }
 header nav #botoes span{
     margin-right: 3%;
+}
+#sobre{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+#sobre span{
+    color: var(--cor-padrao);
+}
+#sobre h1{
+    font-size: 2.5em;
+}
+#sobre p {
+    color: var(--cor-secundaria);
+    font-size: 1.2em;
+    width: 60%;
+    text-align: center;
+}
+#metricas{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    margin-top: 5%;
+    align-items: center;
+    justify-content: space-between;
+}
+.box-metricas{
+    width: 20%;
+}
+.box-metricas span{
+    display: block;
+    font-size: 4em;
+    color: var(--cor-padrao);
+}
+.box-metricas b{
+    font-size: 1.2em;
+}
+.box-metricas p{
+    color: var(--cor-secundaria);
+    font-size: 0.9em;
 }
