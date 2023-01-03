@@ -1,20 +1,43 @@
 :root{
     --cor-padrao:#8E2424;
     --cor-secundaria:#667085;
-    --margin-secao:4%;      
+    --margin-secao-top:6%;      
 }
 
 body{
-    width: 80%;
+    width: 100%;
     height: 100vh;
     margin:0.6% auto;
 }
+
+.container-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: var(--margin-secao-top) 0 3% 0;
+}
+
+.container-flex span:nth-child(1){
+    color: var(--cor-padrao);
+    font-weight: bold;
+}
+
+.container-flex h2{
+    width: 60%;
+    font-size: 2em;
+    text-align: center;
+}
+
+
 nav{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin: auto;
+    width: 80%;
 }
+
 #logo{
     flex:2;
 }
@@ -24,6 +47,7 @@ nav ul {
     list-style: none;
     flex:4;
 }
+
 nav ul li {
     margin: 0 2%;
 }
@@ -43,6 +67,7 @@ nav #botoes {
     align-items: center;
     flex:2;
 }
+
 nav #botoes button{
     background-color: var(--cor-padrao);
     color:white;
@@ -52,59 +77,57 @@ nav #botoes button{
     border-radius: 10px;
     transition: all 1s;
 }
+
 #botoes button:hover{
     background-color: var(--cor-secundaria);
     cursor: pointer;
 }
+
 #botoes span{
     color: var(--cor-secundaria);
     margin-right: 3%;
 }
-#sobre{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: var(--margin-secao);
-}
-#sobre span{
-    color: var(--cor-padrao);
-}
+
 #sobre h1{
     font-size: 2.5em;
 }
+
 #sobre p {
     color: var(--cor-secundaria);
     font-size: 1.2em;
     width: 60%;
     text-align: center;
 }
-#metricas{
 
-    display: flex;
-    margin-top: var(--margin-secao);
-    align-items: center;
+#metricas{
+    flex-direction: row;
     justify-content: space-between;
+    margin: auto;
+    width: 80%;
 }
+
 .box-metricas{
     width: 20%;
 }
+
 .box-metricas span{
     display: block;
     font-size: 4em;
     color: var(--cor-padrao);
 }
+
 .box-metricas b{
     font-size: 1.2em;
 }
+
 .box-metricas p{
     color: var(--cor-secundaria);
     font-size: 0.9em;
 }
-#vagas-titulo div{
-    display: flex;
-    flex-direction: column;
-    margin-top: var(--margin-secao);
-    align-items: center;
+
+#vagas-titulo{
+    width: 80%;
+    margin: auto;
 }
 #vagas-titulo div span{
     color: var(--cor-padrao);
@@ -113,43 +136,46 @@ nav #botoes button{
     border-radius: 20px;
     transition: all 1s;
 }
+
 #vagas-titulo span:hover{
     background-color: var(--cor-padrao);
     color:#f3f3f3;
     cursor: pointer;
 }
 
-#vagas-titulo h2{
-    font-size: 2em;
-}
 #vagas-titulo p {
     color: var(--cor-secundaria);
     font-size: 1.2em;
     width: 60%;
     text-align: center;
 }
-#vagas-titulo img{
-    margin-top: var(--margin-secao);
-    width: 100%;
-}
+
 #vagas-descricao{
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: var(--margin-secao);
+    margin-top: var(--margin-secao-top);
 }
+
+#vagas-titulo img{
+    width: 100%;
+}
+
 #box-vagas{
     width: 55%;
 }
+
 .titulo-vaga{
     font-weight: bold;
 }
+
 .vaga{
     margin: 3% 0;
     padding: 2%;
     border-radius: 10px;
     border: 1px solid rgba(207, 207, 207, 0.5);
 }
+
 .vaga span{
     font-size: 0.8em;
     font-weight: bold;
@@ -158,4 +184,64 @@ nav #botoes button{
     color: var(--cor-secundaria);
     font-size: 0.7em;
     margin-top: 3%;
+}
+#comentarios{
+    background-color:#C3191908;
+    width: 80%;
+    margin: auto;
+}
+#comentarios img{
+    margin: 1.5% 0;
+}
+
+#comentarios span:last-of-type{
+    font-weight: bold;
+}
+
+#formulario{
+    width: 100%;
+    background-color: rgba(207, 207, 207, 0.2);
+}
+
+#comentarios p{
+    color:var(--cor-secundaria);
+    font-size: 0.8em;
+}
+
+#formulario p{
+    color: var(--cor-secundaria);
+}
+
+#formulario p:first-of-type{
+    font-size: 1.3em;
+}
+#formulario div{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    margin: 1.5% 0 0 0;
+}
+#formulario button{
+    background-color: var(--cor-padrao);
+    color: white;
+    transition: all 1s;
+    border: none;
+    border-radius: 10px;
+    width: 10%;
+}
+#formulario button:hover{
+    background-color: var(--cor-secundaria);
+    cursor: pointer;
+}
+#formulario div input {
+    width: 40%;
+    height: 2em;
+    margin-right: 3%;
+    padding: 1%;
+    border-radius: 10px;
+    outline:none
+}
+
+#formulario p:last-of-type{
+    margin: 2% 0;
 }
