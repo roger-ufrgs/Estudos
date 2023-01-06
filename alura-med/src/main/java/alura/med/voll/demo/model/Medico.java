@@ -23,6 +23,7 @@ public class Medico implements Entidade {
     private String nome;
     private String email;
     private String crm;
+
     @Enumerated
     private Especialidade especialidade;
     @Embedded
