@@ -1,19 +1,18 @@
 package alura.med.voll.demo.model;
 
 
+import alura.med.voll.demo.model.dto.medico.CadastroMedico;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 
 @Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
 @Entity(name = "Medico")
-@Table(name = "medicos")
+@Table(name="medicos")
 public class Medico implements Entidade {
 
 
@@ -22,6 +21,9 @@ public class Medico implements Entidade {
     private Long id;
     private String nome;
     private String email;
+
+    private String telefone;
+
     private String crm;
 
     @Enumerated
@@ -35,8 +37,12 @@ public class Medico implements Entidade {
         return this.id;
     }
 
-    @Override
-    public void setId(Long id) {
-
+    public Medico(CadastroMedico medico){
+        this.email = medico.email();
+        this.crm= medico.crm();
+        this.especialidade = medico.especialidade();
+        this.nome = medico.nome();
+        this.telefone = medico.telefone();
+        this.endereco = new Endereco(medico.endereco());
     }
 }

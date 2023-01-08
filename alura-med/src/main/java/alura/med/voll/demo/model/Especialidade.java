@@ -5,6 +5,7 @@ public enum Especialidade {
     PEDIATRA,
     CLINICO,
     GINECOLOGISTA,
-    FISIOTERAPEUTA
+    FISIOTERAPEUTA,
+    ORTOPEDIA
 
 }
