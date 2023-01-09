@@ -20,7 +20,7 @@ public class MedicoController {
     @Transactional
     public void save(@RequestBody @Valid CadastroMedico medico)
     {
-        medicoRepository.save(new Medico(medico));
+        medicoRepository.save(new Medico(medico));\
 
     }
 
