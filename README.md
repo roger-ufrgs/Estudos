@@ -13,4 +13,15 @@
 >>>
 >>>
 
->>**2.**
+>>**2. Projeto API AluraMed** [LINK](https://github.com/ROGER-UFRGS/Estudos/tree/main/alura-med)
+>>> **Descrição :**
+>>> Projeto da plataforma **Alura**, que consiste em fazer uma API no modelo REST usando diversos conceitos REST e também utilizando migrations com Flyway para controlar versões do
+>>> Banco de Dados.
+>>> 
+>>> **Tecnologias utilizadas**
+>>> 
+>>>![JAVA](https://icongr.am/simple/java.svg?size=32&color=currentColor,"JAVA")
+>>>![SPRING](https://icongr.am/simple/spring.svg?size=32&color=currentColor,"SPRING")
+>>>![MYSQL](https://icongr.am/simple/mysql.svg?size=32&color=currentColor,"Mysql")
+>>>[FLIWAY](https://flywaydb.org/,"FLYWAY")
+>>>
