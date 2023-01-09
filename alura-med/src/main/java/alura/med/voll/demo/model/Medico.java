@@ -1,6 +1,7 @@
 package alura.med.voll.demo.model;
 
 
+import alura.med.voll.demo.model.dto.medico.AtualizarMedico;
 import alura.med.voll.demo.model.dto.medico.CadastroMedico;
 import jakarta.persistence.*;
 import lombok.*;
@@ -30,6 +31,7 @@ public class Medico implements Entidade {
     private Especialidade especialidade;
     @Embedded
     private Endereco endereco;
+    private boolean ativo;
 
 
     @Override
@@ -45,4 +47,20 @@ public class Medico implements Entidade {
         this.telefone = medico.telefone();
         this.endereco = new Endereco(medico.endereco());
     }
+
+    public void atualizarInformacoes(AtualizarMedico medico) {
+        this.nome = medico.nome() != null ? medico.nome() : this.getNome();
+        this.telefone = medico.telefone() != null ? medico.telefone() : this.getTelefone();
+        if (medico.nome() != null) {
+            this.nome = medico.nome();
+        }
+        if (medico.telefone() != null) {
+            this.telefone = medico.telefone();
+        }
+        if (medico.endereco() != null) {
+            this.endereco.atualizaEndereco(medico.endereco());
+        }
+
+    }
+
 }
