@@ -1,0 +1,20 @@
+header{
+    @include container(row,space-between,center);
+    background-color: #FFF;
+
+    .menu{
+        width: $tamanho-icon;
+        height: $tamanho-icon;
+        background-image: url("../img/Menu.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+    }
+    div{
+        @include container(row,center,center);
+        margin: 0 4%;
+        span{
+            margin-right: 10%;
+        }
+    }
+}

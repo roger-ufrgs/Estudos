@@ -1,0 +1,7 @@
+@mixin container($direcao:row,$justify: start,$align:initial ) {
+    display: flex;
+    flex-direction: $direcao;
+    justify-content: $justify;
+    align-items: $align;
+}
+  
