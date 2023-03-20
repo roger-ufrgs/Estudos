@@ -1,6 +1,6 @@
 const swiper = new Swiper('.swiper', {
-    speed: 400,
-    slidesPerview:3,
+    speed: 2000,
+    slidesPerView: 2,
     spaceBetween: 10,
     autoplay:{
         delay:500,

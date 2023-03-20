@@ -1,0 +1,49 @@
+section{
+    padding: 2em;
+    .container-card{
+        @include container(row,space-between);
+        background-color: #FFF;
+        border-radius: 1em;
+        box-shadow: 4px 4px 4px rgba($color: #000000, $alpha: 0.5);
+        padding: 2em;
+        .left{
+            @include container(column,space-between);
+            margin-right: 1em;
+            flex-grow: 2;
+            h3{
+                color:orange;
+                font-weight: 700;
+            }
+            h2{
+                color: $cor-degrade;
+                font-weight: 700;
+            }
+            div{
+                @include container(row,initial);
+            }
+            p{
+                color: gray;
+            }
+        }
+        .right{
+            width: 120%;
+            img{
+                width: 100%;
+                margin-bottom: 1em;
+            }
+            span{
+                color: #FFF;
+                background-color: orange;
+                width: 100%;
+                height: 2.5em;
+                display: block;
+                text-align: center;
+                line-height: 2.5em;
+
+            }
+           
+        }
+
+    }
+
+}
