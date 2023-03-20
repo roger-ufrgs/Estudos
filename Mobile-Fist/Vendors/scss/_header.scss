@@ -1,20 +1,56 @@
 header{
     @include container(row,space-between,center);
     background-color: #FFF;
+    position: relative;
 
     .menu{
         width: $tamanho-icon;
         height: $tamanho-icon;
         background-image: url("../img/Menu.svg");
-        background-repeat: no-repeat;
         background-position: center;
+        background-repeat: no-repeat;
         display: inline-block;
+    }
+    .container {
+        img{
+            margin: 2vw;
+        }
     }
     div{
         @include container(row,center,center);
-        margin: 0 4%;
-        span{
-            margin-right: 10%;
+        margin: 0 1%;
+    }
+    ul{
+        display: none;
+        height: 100%;
+        top: 100%;
+        left: 0;
+        position: absolute;
+        width: 60vw;
+      
+        .categoria_menu{
+            color: orange;
+            font-weight: 700;
         }
+
+        li{
+            background-color: #FFF;
+            color: $cor-degrade;
+            padding: 5%;      
+            a{
+                transition: all 1s;
+                text-decoration: none;
+                &:hover{
+                    color: $cor-menu;
+                }
+            }
+        }
+    }
+    input{
+        display: none;
+        &:checked~ ul{
+            display: block;
+        }
+        
     }
 }

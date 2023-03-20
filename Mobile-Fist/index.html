@@ -4,13 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/Vendors/css/style.css">
+    
     <title>AluraBooks</title>
 </head>
 <body>
     <header>
         <div class="container">
-            <span class="menu"></span>
+            <input type="checkbox" name="menu" id="menu">
+            <label for="menu">
+                <span class="menu"></span>
+            </label>
+            <ul>
+                <li class="categoria_menu">Categorias</li>
+                <li class="link_menu"><a href="">Programação</a></li>
+                <li class="link_menu"><a href="">Front-end</a></li>
+                <li class="link_menu"><a href="">Infraestrutura</a></li>
+                <li class="link_menu"><a href="">Business</a></li>
+                <li class="link_menu"><a href="">Design & UX</a></li>
+            </ul>
             <img src="Vendors/img/Logo.svg" alt="Logo AluraBooks">
         </div>
         <div class="container">
@@ -19,5 +35,34 @@
             <a href="#"><img src="Vendors/img/Usuario.png" alt="Meu Perfil"></a>
         </div>
     </header>
+    <main>
+        <section class="banner">
+            <h2>Já sabe por onde começar?</h2>
+            <p>Encontre em nossa estante o que precisa para seu desenvolvimento</p>
+            <input type="search" placeholder="Qual será a próxima leitura?">
+        </section>
+        <section class="carrossel">
+            <h2>Novos Lançamentos</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                               <!-- If we need pagination -->
+                               <div class="swiper-pagination"></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+            
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="./Vendors/img/ApacheKafka.png" alt="Livro ApacheKafka"></div>
+                <div class="swiper-slide"><img src="./Vendors/img/Guia Front-end.png" alt="Livro ApacheKafka"></div>
+                <div class="swiper-slide"><img src="./Vendors/img/Javascript.png" alt="Livro ApacheKafka"></div>
+                <div class="swiper-slide"><img src="./Vendors/img/Portugol.png" alt="Livro ApacheKafka"></div>
+                
+                </div>
+         
+            
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./Vendors/js/swiper.js"></script>
 </body>
 </html>
