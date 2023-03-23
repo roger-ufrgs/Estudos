@@ -1,8 +1,5 @@
 .banner{
-    background: $cor-degrade;
-    padding: 2.5em 2em;
-    text-align: center;
-    color: #FFF;
+    @include banner;
      h2{
         font-size: 18px;
         font-weight: 700;
@@ -24,8 +21,8 @@
             color:#FFF;
             font-family: $fonte-principal;
             background: url("../img/Pesquisa.svg") 3em no-repeat;
-
         }
+        
      }
      
 }

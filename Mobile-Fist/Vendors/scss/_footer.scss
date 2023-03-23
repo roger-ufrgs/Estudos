@@ -1,0 +1,29 @@
+footer{
+    background: #FFF;
+    padding: 1em;
+    text-align: left;
+    h3{
+        color: $cor-degrade;
+        margin: 1em 0;
+        font-weight: 500;
+    }
+    p{
+        margin: 1em 0;
+    }
+
+    input{
+        border-radius: 2em;
+        width: 90%;
+        height: 3vh;
+        margin: 1em 0;
+        padding-left: 2em;
+
+        &::placeholder{
+            color: $cor-degrade;
+            background-image: url("../img/Pesquisa.svg") center no-repeat;
+        }
+    }
+    hr{
+        width: 100%;
+    }
+}

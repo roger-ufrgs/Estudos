@@ -5,3 +5,9 @@
     align-items: $align;
 }
   
+@mixin banner(){
+    background: $cor-degrade;
+    padding: 2.5em 2em;
+    text-align: center;
+    color: #FFF;
+}

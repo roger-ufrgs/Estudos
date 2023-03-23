@@ -3,20 +3,16 @@ header{
     background-color: #FFF;
     position: relative;
     padding: 1.5%;
-
     .menu{
         width: $tamanho-icon;
         height: $tamanho-icon;
-        background-image: url("../img/Menu.svg");
-        background-position: center;
-        background-repeat: no-repeat;
+        background:url("../img/Menu.svg") center no-repeat;
         display: inline-block;
     }
     .container {
         img{
             margin: 2.5vw;
         }
-
     }
     div{
         @include container(row,center,center);
@@ -29,7 +25,6 @@ header{
         left: 0;
         position: absolute;
         width: 60vw;
-      
         .categoria_menu{
             color: orange;
             font-weight: 700;

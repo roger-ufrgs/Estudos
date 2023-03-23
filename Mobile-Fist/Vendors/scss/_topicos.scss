@@ -1,0 +1,22 @@
+.topicos{
+    @include banner;
+    h2{
+        margin-bottom: 1em;
+    }
+    .container-topicos{
+        @include container(null,center,center);
+        flex-wrap: wrap;
+        text-align: center;
+        span{
+            background-color: orange;
+            margin: 0.5em;
+            padding: 0.5em;
+            a{
+                text-decoration: none;
+                color: #FFF;
+    
+            }
+        }
+    }
+   
+}
