@@ -25,3 +25,15 @@
 >>>![MYSQL](https://icongr.am/simple/mysql.svg?size=32&color=currentColor,"Mysql")
 >>>[FLIWAY](https://flywaydb.org/,"FLYWAY")
 >>>
+
+>>**3. Projeto Mobile-fist** [LINK](https://github.com/roger-ufrgs/Estudos/tree/main/Mobile-Fist)
+>>> **Descrição :**
+>>> Projeto da plataforma **Alura**, que consiste em fazer um layout em html e css baseado no conceito Mobile-fist
+>>> 
+>>> **Tecnologias utilizadas**
+>>> 
+>>>![HTML](https://icongr.am/devicon/html5-plain.svg?size=32&color=currentColor,"HTML")
+>>>![CSS](https://icongr.am/devicon/css3-plain.svg?size=32&color=currentColor,"CSS")
+>>>![SASS](https://icongr.am/devicon/sass.svg?size=32&color=currentColor,"SASS")
+>>>![JS](https://icongr.am/devicon/javascript.svg?size=32&color=currentColor,"JS")
+>>>
