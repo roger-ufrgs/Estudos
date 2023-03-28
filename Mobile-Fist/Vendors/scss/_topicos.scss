@@ -1,0 +1,21 @@
+.topicos{
+    background: $cor-degrade;
+    h2{
+        color: #FFF;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    ul{
+        @include container(row,center,center);
+        flex-wrap: wrap;
+        li{
+            padding: 1em;
+            background-color: orange;
+            margin: 0.5em;
+            a{
+                text-decoration: none;
+                color: #FFF;
+            }
+        }
+    }
+}

@@ -5,3 +5,8 @@
     align-items: $align;
 }
   
+@mixin media-querie($min){
+    @media screen and (min-width:#{$min}){
+        @content;
+    }
+}
