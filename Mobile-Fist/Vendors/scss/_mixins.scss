@@ -10,3 +10,35 @@
         @content;
     }
 }
+
+@mixin banner(){
+    background: $cor-degrade;
+    padding: 2.5em 2em;
+    text-align: center;
+    color: #FFF;
+}
+
+@mixin display($valor:none){
+    display: $valor;
+}
+
+@mixin placeholder($cor,$img,$posicao:initial,$padding:0){
+    &::placeholder{
+        color: $cor;
+        background: url(../img/#{$img}.svg) $posicao no-repeat;
+        padding-left: $padding;
+        font-family: $fonte-principal;
+        font-size: 14px;
+    }
+}
+
+@mixin tamanho_box($width:inherit,$height:inherit){
+    width : $width;
+    height: $height;
+}
+
+@mixin fonte($size:inherit,$weight:inherit,$cor:initial){
+    font-size: $size;
+    font-weight: $weight;
+    color:$cor;
+}

@@ -1,26 +1,23 @@
 footer{
-    background-color: #FFF;
-    .contato{
-        h2{
-            color: $cor-degrade;
-            text-align: left;
-        }
-        p{
-            color:gray;
-            margin: 1em 0;
-        }
-        input{
-            width: 90%;
-            border-radius: 2em;
-            padding: 1em;
-            text-align: left;
-            &::placeholder{
-                background: url(../img/Email.svg) no-repeat left;
-                padding-left: 2em;
-            }
-        }
+    background: #FFF;
+    padding: 1em;
+    text-align: left;
+    h3{
+        margin: 1em 0;
+        @include fonte(null,500,$cor-degrade);
     }
-    .titulo_footer{
-        padding: 1.5em;
+    p{
+        margin: 1em 0;
+    }
+
+    input{
+        border-radius: 2em;
+        margin: 1em 0;
+        padding-left: 1em;
+        @include placeholder($cor-degrade,"Email",left,10%);
+        @include tamanho_box(90%,3vh);
+    }
+    hr{
+        width: 100%;
     }
 }

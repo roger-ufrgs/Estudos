@@ -1,11 +1,7 @@
 .banner{
-    background: $cor-degrade;
-    padding: 2.5em 2em;
-    text-align: center;
-    color: #FFF;
+    @include banner;
      h2{
-        font-size: 18px;
-        font-weight: 700;
+         @include fonte(18px,null,#FFF);
      }
      p{
         font-weight: 500;
@@ -13,19 +9,12 @@
      }
      input{
         background-color: transparent;
-        text-align: center;
-        width: 100%;
-        height: 3em;
-        border-radius: 2em;
-        color: #FFF;
         border:1px solid #FFF;
-        &::placeholder{
-            font-size: 14px;
-            color:#FFF;
-            font-family: $fonte-principal;
-            background: url("../img/Pesquisa.svg") 3em no-repeat;
-
-        }
+        border-radius: 2em;
+        padding: 1em;
+        text-align: center;
+        @include tamanho_box(100%, 3em);
+        @include fonte(18px,null,#FFF);
+        @include placeholder(#FFF,"Pesquisa",left,3em);
      }
-     
 }

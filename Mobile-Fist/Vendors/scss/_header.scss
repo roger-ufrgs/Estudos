@@ -1,22 +1,21 @@
 header{
+    h1{
+        @include display;
+    }
     @include container(row,space-between,center);
     background-color: #FFF;
     position: relative;
     padding: 1.5%;
 
     .menu{
-        width: $tamanho-icon;
-        height: $tamanho-icon;
-        background-image: url("../img/Menu.svg");
-        background-position: center;
-        background-repeat: no-repeat;
+        @include tamanho_box($tamanho-icon,$tamanho-icon);
+        background:url("../img/Menu.svg") center no-repeat;
         display: inline-block;
     }
     .container {
         img{
             margin: 2.5vw;
         }
-
     }
     div{
         @include container(row,center,center);
@@ -24,15 +23,12 @@ header{
     }
     ul{
         display: none;
-        height: 100%;
-        top: 100%;
         left: 0;
         position: absolute;
-        width: 60vw;
-      
+        top: 100%;
+        @include tamanho_box(60vw,100%);
         .categoria_menu{
-            color: orange;
-            font-weight: 700;
+            @include fonte(null,700,$cor-menu);
         }
 
         li{
@@ -53,6 +49,5 @@ header{
         &:checked~ ul{
             display: block;
         }
-        
     }
 }
