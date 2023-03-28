@@ -34,6 +34,6 @@
 >>> 
 >>>![HTML](https://icongr.am/devicon/html5-plain.svg?size=32&color=currentColor,"HTML")
 >>>![CSS](https://icongr.am/devicon/css3-plain.svg?size=32&color=currentColor,"CSS")
->>>![SASS](https://icongr.am/devicon/sass.svg?size=32&color=currentColor,"SASS")
->>>![JS](https://icongr.am/devicon/javascript.svg?size=32&color=currentColor,"JS")
+>>>![SASS](https://icongr.am/simple/sass.svg?size=32&color=colored=false,"SASS")
+>>>![JS](https://icongr.am/simple/javascript.svg?size=32&color=colored=false,"JS")
 >>>
